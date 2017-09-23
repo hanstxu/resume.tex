@@ -1,0 +1,142 @@
+% resume.tex
+\documentclass{resume}
+
+\pagestyle{empty}
+
+\start
+  % overview
+  \begin{minipage}[t]{4.8in}
+    {\Large\bold{Steven Han Xu}} \\
+    (408) 307-2423 \\
+    5943 Taormino Avenue, \\
+    San Jose, CA 95123
+  \end{minipage}
+  \begin{minipage}[t]{2in}
+    \begin{flushright}
+      \href{mailto:hanstxu@gmail.com}{hanstxu@gmail.com} \\
+      \href{https://hanstxu.github.io}{hanstxu.github.io} \\
+      \href{https://www.github.com/hanstxu}{github.com/hanstxu} \\
+      \href{https://www.linkedin.com/in/hanstxu}{linkedin.com/in/hanstxu}
+    \end{flushright}
+  \end{minipage}
+  \begin{minipage}[t]{1in}
+    \hspace*{4pt} \bold{email} \\
+    \hspace*{4pt} \bold{website} \\
+    \hspace*{4pt} \bold{github} \\
+    \hspace*{4pt} \bold{linkedin}
+  \end{minipage} \\\\
+  \line(1,0){550} \\
+
+  \begin{minipage}[t]{4.8in}
+
+    % education
+    \begin{resume_section}{EDUCATION}
+      \bold{University of California, Los Angeles}\\
+      \datedevent{B.S. in Computer Science}{September 2014 - June 2018}
+      \bulletpoint{GPA: 3.55, Major GPA: 3.62}
+      \bulletpoint{BD Academic Achievement Scholarship}
+    \end{resume_section}
+
+    \vspace{1pt}
+
+    % employment
+    \begin{resume_section}{EMPLOYMENT}
+      \bold{Prysm}\\
+      \datedevent{Software Engineering Intern}{June 2017 - September 2017}
+        \bulletpoint{Created a testing and development infrastructure for Amazon Alexa skills (C++)}
+        \begin{itemize}
+          \item Integrated Amazon Alexa with the Microsoft Graph API (Node.js)
+          \begin{itemize}
+            \item e.g. send emails and search a person's contacts list with voice
+          \end{itemize}
+        \end{itemize}
+        \bulletpoint{Created an authorization server to link Amazon Alexa accounts with Prysm Synthesis accounts (Node.js)}
+      \bold{Prysm}\\
+      \datedevent{Software Engineering Intern}{June 2016 - September 2016}
+        \begin{itemize}
+          \item Prototyped a voice control system to add to Prysm's multitouch software, Synthesis (C, bash scripting, JavaScript)
+          \begin{itemize}
+            \item This system routed voice commands to an Amazon Echo to a Raspberry Pi web server to Synthesis's internal APIs.
+            \item Lended credence for a voice user interface on the product roadmap
+          \end{itemize}
+        \end{itemize}
+      \bold{CapsoVision} \\
+      \datedevent{Engineering Intern at CapsoVision}{July 2015 - September 2015}
+        \bulletpoint{Wrote a validation protocol for the medical software, CapsoView, to pass audits by the FDA}
+        \bulletpoint{Reorganized and documented clinical trial data for CapsoCam}
+    \end{resume_section}
+
+        \vspace{1pt}
+
+    % projects
+    \begin{resume_section}{PROJECTS}
+      \textsl{View the source code and READMEs on my github.}\\
+      \vspace{4pt}
+      \project{hanstxu.github.io}{A personal website (HTML, CSS, JavaScript)}{Summer 2017}\vspace{2pt}
+      \project{resume.tex}{A resume (LaTeX)}{Summer 2017}\vspace{2pt}
+      \project{bash.exe}{Bash commands for Windows cmd (C++)}{Summer 2017}\vspace{2pt}
+      \project{alexa\_endpoint\_js}{A web server for an Amazon Alexa Skill (Node.js)}{Summer 2017}\vspace{2pt}
+      \project{alexa\_endpoint\_cpp}{A web server for an Amazon Alexa Skill (C++)}{Summer 2017}\vspace{2pt}
+      \project{simple\_json\_cpp}{A lightweight JSON library (C++)}{Summer 2017}\vspace{2pt}
+      \project{class\_refresh}{A notification chrome extension (JavaScript)}{Summer 2017}\vspace{2pt}
+      \project{LightRunner}{A space asteroid dodging game utilizing a Leap Motion sensor (C++)}{Spring 2015}\vspace{2pt}
+  \end{resume_section}
+  \end{minipage}
+  \begin{minipage}[t]{0.4in}
+    \onespace
+  \end{minipage}
+  \begin{minipage}[t]{3in}
+    % coursework
+    \begin{resume_section}{COURSEWORK}
+      \bold{Completed}\\
+        \dash{Networking (C++)}
+        \dash{Operating Systems (C, C++)}
+        \dash{Database Systems}
+          \hspace{14pt}(HTML, CSS, PHP, SQL, C++)\\\vspace{2pt}
+        \dash{Algorithms and Complexity}
+        \dash{Programming Languages}
+          \hspace{14pt}(OCaml, Java, Prolog, Scheme, Python)\\\vspace{2pt}
+        \dash{Artificial Intelligence (Lisp)}
+        \dash{Computer Graphics (JavaScript, C++)}
+        \dash{Data Structures (C++)}
+        \vspace{4pt}
+      \bold{Upcoming}\\
+        \dash{Compilers (Java)}
+        \dash{Machine Learning (Python)}
+        \dash{Software Engineering Capstone}
+    \end{resume_section}
+
+    % languages
+    \begin{resume_section}{LANGUAGES}
+      \dash{C++}
+      \dash{C}
+      \dash{JavaScript}
+      \dash{Bash}
+      \dash{Java}
+      \dash{LaTeX}
+      \dash{Scheme}
+      \dash{Lisp}
+      \dash{OCaml}
+      \dash{Python}
+      \dash{Prolog}
+      \dash{HTML}
+      \dash{CSS}
+      \dash{C\#}
+      \dash{php}
+      \dash{Verilog}
+    \end{resume_section}
+
+    % software
+    \begin{resume_section}{SOFTWARE}
+      \dash{Linux}
+      \dash{Node.js}
+      \dash{Make}
+      \dash{git}
+      \dash{Vagrant}
+      \dash{AWS EC2}
+      \dash{AWS Lambda}
+      \dash{MySQL}
+      \dash{Docker}
+    \end{resume_section}
+  \end{minipage}
+\finish
