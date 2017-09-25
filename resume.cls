@@ -5,7 +5,12 @@
 
 % page size and margins
 \RequirePackage{geometry}
+
+% links
 \RequirePackage{hyperref}
+
+% radio buttons
+\RequirePackage{tikz}
 
 % page size and margins
 \geometry{
@@ -45,15 +50,20 @@
 \newcommand{\bold}[1]
   {\textbf{#1}}
 
-\newcommand{\n}
-  {
-    \hfill\\
-  }
+\newcommand{\italic}[1]
+  {\textsl{#1}}
 
-% make this recursive
+\newcommand{\usedlanguages}[1]
+  {\small{\italic{#1}}}
+
 \newcommand{\dash}[1]
   {
     \hspace{4pt} - #1 \\\vspace{2pt}
+  }
+
+\newcommand{\sdash}[2]
+  {
+    \hspace{4pt} - \makebox[1in][l]{#1} #2  \\\vspace{2pt}
   }
 
 \newcommand{\datedevent}[2]
@@ -84,6 +94,19 @@
     \end{flushleft}
   }
 
+% radio button from StackOverflow; should examine this
+\makeatletter
+\newcommand*{\radiobutton}{%
+  \@ifstar{\@radiobutton0}{\@radiobutton1 }%
+}
+\newcommand*{\@radiobutton}[1]{%
+  \begin{tikzpicture}
+    \pgfmathsetlengthmacro\radius{height("X")/2}
+    \draw[radius=\radius] circle;
+    \ifcase#1 \fill[radius=.6*\radius] circle;\fi
+  \end{tikzpicture}%
+}
+\makeatother
 
 % get rid of page numbers
 \pagestyle{empty}
