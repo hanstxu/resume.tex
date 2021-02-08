@@ -25,7 +25,7 @@
 \hypersetup{
   colorlinks=true,
   linkcolor=blue,
-  filecolor=magenta,      
+  filecolor=magenta,
   urlcolor=blue,
 }
 
